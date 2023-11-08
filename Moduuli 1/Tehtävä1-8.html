@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+
+<script>
+    let startYear = parseInt(prompt("Syötä alkuluku:"));
+    let endYear = parseInt(prompt("Syötä loppuluku:"));
+
+    let leapYears = [];
+
+    for (let year = startYear; year <= endYear; year++) {
+        if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+            leapYears.push(year);
+        }
+    }
+
+    let ul = document.createElement("ul");
+
+    leapYears.forEach((year) => {
+        let li = document.createElement("li");
+        li.textContent = year;
+        ul.appendChild(li);
+    });
+
+    document.body.appendChild(ul);
+
+</script>
+</body>
+</html>
+</body>
+</html>
+
+
+

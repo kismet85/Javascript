@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="product"></p>
+    <p id="average"></p>
+    <script>
+    const eka = parseInt(prompt("Anna ensimmäinen luku:"));
+    const toka = parseInt(prompt("Anna toinen luku:"));
+    const kolmas = parseInt(prompt("Anna kolmas luku:"));
+    const sum = eka + toka + kolmas;
+    let product = eka * toka * kolmas;
+    let average = sum / 3;
+    if (eka != null && toka != null && kolmas !=null)  {
+        document.getElementById("sum").innerHTML =
+        "Sum of " + eka + " and " + toka + " and " + kolmas + " is:" + sum;
+        document.getElementById("product").innerHTML =
+        "Product of " + eka + " and " + toka + " and " + kolmas + " is:" + product;
+        document.getElementById("average").innerHTML =
+        "average of " + sum + " divided by number of numbers is:" + average;
+        }
+    </script>
+
+</body>
+
+</html>

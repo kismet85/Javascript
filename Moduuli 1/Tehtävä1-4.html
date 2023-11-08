@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+
+    const schools = [
+        'Gryffindor',
+        'Slytherin',
+        'Hufflepuff',
+        'Ravenclaw'
+    ]
+
+    const name = prompt("Please enter your name");
+    var randomIndex = Math.floor(Math.random() * schools.length);
+    var randomElement = schools[randomIndex]
+    if (name != null) {
+        document.getElementById("demo").innerHTML =
+            name + ", you are " + randomElement;
+    }
+</script>
+</body>
+</html>

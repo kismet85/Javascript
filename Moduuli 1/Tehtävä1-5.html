@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="vuosi"></p>
+<script>
+  let vuosi = parseInt(prompt(("Syötä vuosi kysymyksenä onko se karkausvuosi!")))
+  if(vuosi!= null)
+  {
+    if ((0 == vuosi % 4) && (0 != vuosi % 100) || (0 == vuosi % 400)) {
+        document.getElementById("vuosi").innerHTML =
+            "Vuosi on karkausvuosi!";
+    } else {
+        document.getElementById("vuosi").innerHTML =
+            "Vuosi ei ole karkausvuosi!";
+    }
+  }
+</script>
+
+</body>
+</html>

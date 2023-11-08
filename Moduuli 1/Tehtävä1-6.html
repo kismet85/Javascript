@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="sum"></p>
+<script>
+    const squareroot = parseInt(prompt("Anna ensimmäinen luku:"));
+    const yesorno = confirm(squareroot)
+    let sqrt = Math.sqrt(squareroot);
+    if (yesorno!=true)
+    {
+        document.getElementById("sum").innerHTML =
+                    "The square root is not calculated."
+    }
+    else if (yesorno) {
+            if (squareroot < 0) {
+                document.getElementById("sum").innerHTML =
+                    "The square root of a negative number is not defined"
+            } else if (squareroot != null && squareroot > 0) {
+                document.getElementById("sum").innerHTML =
+                "Squareroot is: " + sqrt;
+            } else {
+                document.getElementById("sum").innerHTML =
+                    "Squareroot is impossible: ";
+            }
+    }
+</script>
+
+</body>
+
+</html>

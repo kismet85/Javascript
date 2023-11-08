@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="base"></p>
+<script>
+    let noppienheitto = 0;
+    let summa = 0;
+    const noppienmaara = parseInt(prompt("Syötä noppaheittojen määrä:"))
+    while (noppienheitto < noppienmaara)
+    {
+        const noppa = Math.floor(Math.random()* 6)
+        summa += noppa;
+        noppienheitto += 1;
+    }
+
+    document.getElementById("base").innerHTML = summa;
+
+
+</script>
+</body>
+</html>

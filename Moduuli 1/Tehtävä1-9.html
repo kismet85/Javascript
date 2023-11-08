@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+    function isPrime(numero) {
+        if (numero <= 1) {
+            return false;
+        }
+
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    const syote = parseInt(prompt("Syötä luku:"));
+    const tulos = isPrime(syote);
+
+    let vastaus = "";
+    if (tulos) {
+        vastaus += syote + " on alkuluku.";
+    } else {
+        vastaus += syote + " ei ole alkuluku.";
+    }
+    vastaus += "";
+
+    document.getElementById("target").innerHTML = vastaus;
+</script>
+</body>
+</html>
+</body>
+</html>
+

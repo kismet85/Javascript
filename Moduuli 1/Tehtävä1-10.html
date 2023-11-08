@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+        const numDice = parseInt(prompt("Syötä noppien lukumäärä:"))
+        const targetSum = parseInt(prompt("Haluttu summa:"))
+        let totalRolls = parseInt(prompt("Montako kertaa noppia heitetään:"))
+        var successfulRolls = 0;
+
+        for (var i = 0; i < totalRolls; i++) {
+            var sum = 0;
+            for (var j = 0; j < numDice; j++) {
+                var roll = Math.floor(Math.random() * 6) + 1; // Simulate rolling a single die
+                sum += roll;
+            }
+            if (sum === targetSum) {
+                successfulRolls++;
+            }
+        }
+
+        var probability = (successfulRolls / totalRolls) * 100;
+        var result = "Probability to get sum " + targetSum + " with " + numDice + " dice is " + probability.toFixed(2) + "%";
+
+        document.getElementById("result").innerHTML = result;
+
+</script>
+</body>
+</html>
