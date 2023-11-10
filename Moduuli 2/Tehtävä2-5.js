@@ -1,16 +1,21 @@
 "use strict";
 const numerot = [];
 
-let numero = 1;
-while (numero > 0)
+let paalla = true;
+while (paalla)
 {
-    numero = parseInt(prompt("Syötä luku:"))
-    numerot.push(numero);
+    let numero = parseInt(prompt("Syötä luku:"))
+    if(!numerot.includes(numero)){
+        numerot.push(numero);
+    }
+    else
+    {
+        console.log("Number already exists");
+        paalla = false;
+    }
 }
 numerot.sort((a, b) => a - b)
-numerot.reverse();
 for (let i =  0; i < numerot.length; i++) {
     console.log(numerot[i])
 }
-
 
