@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../../../Program Files/nodejs/node" path-to-js-file="Tehtävä1-1.js" working-dir="$PROJECT_DIR$/Moduuli 1">
+    <method v="2" />
+  </configuration>
+</component>
